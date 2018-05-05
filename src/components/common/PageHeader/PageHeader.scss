@@ -1,0 +1,51 @@
+@import 'utils';
+.page-header {
+    background: $oc-blue-5;
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    .logo {
+        @include media("<=medium") {
+            font-size: 1.5rem;
+        }
+        font-size: 2.5rem;
+        color: white;
+        margin: 1rem;
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+    .right {
+        margin-left: auto;
+        padding-right: 1rem;
+        display: flex;
+        .menu {
+            @include media("<=medium") {
+                font-size: 0.7rem;
+            }
+            font-size: 1.1rem;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            border: 2px solid white;
+            padding: 0.3rem;
+            border-radius: 2px;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            &:hover {
+                background: $oc-blue-4;
+            }
+            &:active {
+                background: $oc-blue-3;
+            }
+        }
+
+        .menu + .menu {
+            margin-left: 1rem;
+        }
+    }
+}

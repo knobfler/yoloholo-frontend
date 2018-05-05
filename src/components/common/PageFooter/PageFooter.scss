@@ -1,0 +1,14 @@
+@import 'utils';
+.page-footer {
+    background: $oc-gray-3;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .logo {
+        font-size: 2rem;
+        color: white;
+        font-weight: 600;
+    }
+}
